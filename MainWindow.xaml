@@ -1,0 +1,35 @@
+﻿<Window x:Class="Lecture_15_16_CSV.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lecture_15_16_CSV"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Canvas Background="#FFB54545">
+        <Canvas Height="291" Width="301" Canvas.Left="70" Canvas.Top="73" RenderTransformOrigin="0.5,0.5" Background="#FF2E8A80" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Canvas.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.063"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Canvas.RenderTransform>
+            <Label Content="First Name" Canvas.Left="37" Canvas.Top="27"/>
+            <TextBox x:Name="tbFirstName" Canvas.Left="42" TextWrapping="Wrap" Canvas.Top="58" Width="120" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <Label Content="Grade" Canvas.Left="49" Canvas.Top="89"/>
+            <TextBox x:Name="tbGrade" Canvas.Left="38" TextWrapping="Wrap" Canvas.Top="121" Width="120"/>
+            <Button x:Name="btnSaveGrade" Content="Save Grade" Canvas.Left="72" Canvas.Top="183" HorizontalAlignment="Center" VerticalAlignment="Top" Width="150" Height="36" Click="btnSaveGrade_Click"/>
+        </Canvas>
+        <Button x:Name="btnSaveList" Content="Save List" Canvas.Left="532" Canvas.Top="340" Height="51" Width="139" Click="btnSaveList_Click"/>
+        <RichTextBox Height="284" Width="297" Canvas.Left="493" Canvas.Top="10" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <FlowDocument>
+                <Paragraph>
+                    <Run x:Name="runDisplay"  Text=""/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+    </Canvas>
+
+</Window>
